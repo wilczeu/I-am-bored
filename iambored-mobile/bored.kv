@@ -3,11 +3,19 @@
     FloatLayout:
         size: 300, 200
         Button:
+            id:B01
             pos_hint: {'x':.70, 'y':.20}
             text: "Click me if you're bored!"
             background_normal: ''
             background_color: (7, 0, 68, 10)
+            on_press: root.bored_bttn()
+        
+        Label:
+            id:L2
+            text: " "
+            pos_hint: {'x':.70, 'y':1.5}
     
         Label:
+            id:L1
             text: "hellooo!"
             pos_hint: {'x':.70, 'y':2}
